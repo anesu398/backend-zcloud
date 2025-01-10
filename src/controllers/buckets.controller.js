@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs-extra');
 const path = require('path');
 const { Bucket } = require('../models/bucket');
-const { verifyToken } = require('../middleware/auth');
+const { verifyToken } = require('../middlewares/auth.middleware');
 const router = express.Router();
 
 // List buckets
